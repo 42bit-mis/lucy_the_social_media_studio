@@ -1,0 +1,13 @@
+[project]
+name = "social-media-studio-lucy"
+version = "18.9.0"
+description = "Lucy v18 Step 9 Distribution Prep with modular production candidate and legacy fallback"
+requires-python = ">=3.10"
+dependencies = ["numpy", "Pillow", "psutil", "keyring"]
+
+[project.scripts]
+lucy = "social_media_studio.app:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["social_media_studio/tests"]

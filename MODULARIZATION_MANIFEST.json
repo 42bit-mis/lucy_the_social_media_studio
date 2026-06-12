@@ -1,0 +1,58 @@
+{
+  "name": "lucy_v18_step1_audio_engine",
+  "base": "v17 Step 18 Integration Polish + v16 legacy_app.py",
+  "step": "v18-step1",
+  "focus": "Audio Engine Finalization – first productive modular engine",
+  "safe_default": "Startscreen/Legacy remains available; modular Audio Extractor now uses productive engine",
+  "changed_modules": [
+    "social_media_studio/core/audio_engine.py",
+    "social_media_studio/gui/tab_audio_extractor_real.py",
+    "social_media_studio/app.py",
+    "social_media_studio/core/smoke.py",
+    "social_media_studio/config.py"
+  ],
+  "new_capabilities": [
+    "execute_audio_job() real ffmpeg execution",
+    "qc_audio_output() post-export quality check",
+    "audio export history JSON",
+    "audio_engine_export_smoke() with synthetic test audio",
+    "Audio Extractor real tab uses engine instead of direct ffmpeg call",
+    "CLI --audio-export-smoke / --audio-execute / --audio-history"
+  ],
+  "new_commands": [
+    "--audio-export-smoke",
+    "--audio-execute SOURCE --audio-profile mp3_320",
+    "--audio-history"
+  ],
+  "tests": [
+    "compileall OK",
+    "audio-export-smoke OK",
+    "audio-tab-smoke OK",
+    "modular smoke 41 OK / 0 fail",
+    "health OK",
+    "audio-tab-preview no start crash",
+    "modular-gui no start crash",
+    "start-screen no start crash"
+  ],
+  "timestamp": "2026-05-12T15:11:58.182192",
+  "current_step": "v18 Step 3 · Campaign Engine Finalization",
+  "completed_steps": [
+    "v18 Step 2 · Insights Engine Finalization"
+  ],
+  "productive_modular_areas": [
+    "Audio Extractor",
+    "Insights Dashboard"
+  ],
+  "updated_at": "2026-05-12T15:37:48.579887",
+  "productive_modules": [
+    "audio_engine",
+    "insights_engine",
+    "campaign_engine"
+  ],
+  "commands": [
+    "--campaign-productive-smoke",
+    "--campaign-demo",
+    "--campaign-bundle",
+    "--campaign-task-board"
+  ]
+}

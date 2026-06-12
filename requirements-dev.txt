@@ -1,0 +1,3 @@
+# Optional development/build packages
+pytest
+pyinstaller

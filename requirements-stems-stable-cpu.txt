@@ -1,0 +1,9 @@
+# Stable CPU Stem Environment for Python 3.12
+numpy
+Pillow
+psutil
+keyring
+soundfile
+demucs
+# Install PyTorch separately with:
+# python -m pip install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu

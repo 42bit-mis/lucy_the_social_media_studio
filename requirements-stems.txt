@@ -1,0 +1,7 @@
+# Optional Stem Lab dependencies
+# Recommended: install these inside a Python 3.12 virtual environment.
+# Do NOT force TorchCodec on Windows/Python 3.14; use the stable install commands below.
+demucs
+soundfile
+# Install torch/torchaudio with the official CPU index, preferably:
+# python -m pip install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu

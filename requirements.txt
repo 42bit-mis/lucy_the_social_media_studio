@@ -1,0 +1,7 @@
+numpy
+Pillow
+psutil
+keyring
+httpx
+# Optional Stem Lab / AI packages are in requirements-stems.txt
+# Optional dev/build packages are in requirements-dev.txt
